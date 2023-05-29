@@ -10,20 +10,36 @@
 }
 
 .featured-albums-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #1E1E1E;
+
   .featured-albums-section__albums {
+    width: 1136px;
+    height: 470px;
+    position: relative;
+    margin-top: 24px;
+    margin-left: 24px;
     box-sizing: border-box;
     background: #121212;
     border: 1px solid #343434;
     border-radius: 32px;
     display: flex;
+    gap: 16px;
 
     .featured-albums-section__albums-first {
+      position: relative;
+      margin-top: 24px;
+      margin-left: 24px;
       width: 352px;
       height: 422px;
       background: #292929;
       border-radius: 24px;
 
       .featured-albums-section__albums-first-image-container {
+        margin-top: 24px;
+        margin-left: 24px;
         width: 140px;
         height: 140px;
         background: #EAA3A3;
@@ -35,6 +51,8 @@
 
         .featured-albums-section__albums-first-content-title {
           position: relative;
+          margin-top: 16px;
+          margin-left: 24px;
           width: 199px;
           height: 48px;
           font-family: 'Lato';
@@ -43,15 +61,14 @@
           font-size: 24px;
           line-height: 100%;
           color: #FFFFFF;
-
         }
 
         .featured-albums-section__albums-first-content-info {
           position: relative;
           width: 304px;
           height: 44px;
-
-
+          margin-left: 24px;
+          margin-top: 16px;
           font-family: 'Lato';
           font-style: normal;
           font-weight: 400;
@@ -63,75 +80,206 @@
         }
 
         .featured-albums-section__albums-first-content-button {
+          position: relative;
           display: flex;
           flex-direction: row;
           justify-content: center;
           align-items: center;
           padding: 16px 24px;
           gap: 8px;
+          margin-left: 24px;
+          margin-top: 46px;
+          width: 165px;
+          height: 48px;
+          background: #65D46E;
+          border-radius: 200px;
+        }
 
+        .button-icon {
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-left: 12px solid black;
+
+
+        }
+
+        .featured-albums-section__albums-first-content-button-play-text {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .featured-albums-section__albums-second {
+      width: 352px;
+      height: 422px;
+      margin-top: 24px;
+      background: #292929;
+      border-radius: 24px;
+
+      .featured-albums-section__albums-second-image-container {
+        margin-top: 24px;
+        margin-left: 24px;
+        width: 140px;
+        height: 140px;
+        background: #EAA3A3;
+        border-radius: 16px;
+      }
+
+      .featured-albums-section__albums-second-content {
+
+
+        .featured-albums-section__albums-second-content-title {
+          position: relative;
+          margin-top: 16px;
+          margin-left: 24px;
+          width: 199px;
+          height: 48px;
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 100%;
+          color: #FFFFFF;
+        }
+
+        .featured-albums-section__albums-second-content-info {
+          position: relative;
+          width: 304px;
+          height: 44px;
+          margin-left: 24px;
+          margin-top: 16px;
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          letter-spacing: -0.01em;
+          color: #FFFFFF;
+          opacity: 0.5;
+        }
+
+        .featured-albums-section__albums-second-content-button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 16px 24px;
+          gap: 8px;
+          margin-left: 24px;
+          margin-top: 46px;
           position: relative;
           width: 165px;
           height: 48px;
           background: #65D46E;
           border-radius: 200px;
+        }
+
+        .button-icon {
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-left: 12px solid black;
 
 
         }
-      }
 
-      .featured-albums-section__albums-second {
-        width: 352px;
-        height: 422px;
-        background: #292929;
-        border-radius: 24px;
-
-        .featured-albums-section__albums-second-image-container {
-          width: 140px;
-          height: 140px;
-          background: #EAA3A3;
-          border-radius: 16px;
-        }
-      }
-
-      .featured-albums-section__albums-third {
-        width: 352px;
-        height: 422px;
-        background: #292929;
-        border-radius: 24px;
-
-        .featured-albums-section__albums-third-image-container {
-          width: 140px;
-          height: 140px;
-          background: #EAA3A3;
-          border-radius: 16px;
+        .featured-albums-section__albums-first-content-button-play-text {
+          margin-right: 8px;
         }
       }
     }
 
-    .featured-albums-section-spotify-ad {
-      box-sizing: border-box;
+    .featured-albums-section__albums-third {
+      width: 352px;
+      height: 422px;
+      margin-top: 24px;
+      background: #292929;
+      border-radius: 24px;
 
-      position: absolute;
-      width: 1136px;
-      height: 176px;
+      .featured-albums-section__albums-third-image-container {
+        margin-top: 24px;
+        margin-left: 24px;
+        width: 140px;
+        height: 140px;
+        background: #EAA3A3;
+        border-radius: 16px;
+      }
+
+      .featured-albums-section__albums-third-content {
 
 
-      border: 1px solid #343434;
-      border-radius: 32px;
+        .featured-albums-section__albums-third-content-title {
+          position: relative;
+          margin-top: 16px;
+          margin-left: 24px;
+          width: 199px;
+          height: 48px;
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 100%;
+          color: #FFFFFF;
+        }
 
-      .featured-albums-section-spotify-ad-container {
-        box-sizing: border-box;
+        .featured-albums-section__albums-third-content-info {
+          position: relative;
+          width: 304px;
+          height: 44px;
+          margin-left: 24px;
+          margin-top: 16px;
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          letter-spacing: -0.01em;
+          color: #FFFFFF;
+          opacity: 0.5;
+        }
 
-        position: absolute;
-        width: 1088px;
-        height: 128px;
+        .featured-albums-section__albums-third-content-button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 16px 24px;
+          gap: 8px;
+          margin-left: 24px;
+          margin-top: 46px;
+          position: relative;
+          width: 165px;
+          height: 48px;
+          background: #65D46E;
+          border-radius: 200px;
+        }
 
 
-        background: linear-gradient(90.79deg, #65D46E -8.89%, #0B280D 100%);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        border-radius: 24px;
+
+        .button-icon {
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-left: 12px solid black;
+
+
+        }
+
+        .featured-albums-section__albums-first-content-button-play-text {
+          margin-right: 8px;
+        }
       }
     }
+
+  }
+
+  .featured-albums-section-spotify-ad {
+
+
+    .featured-albums-section-spotify-ad-container {}
   }
 }
