@@ -1,0 +1,137 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+/// 
+/// 
+
+#home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured-albums-section {
+  .featured-albums-section__albums {
+    box-sizing: border-box;
+    background: #121212;
+    border: 1px solid #343434;
+    border-radius: 32px;
+    display: flex;
+
+    .featured-albums-section__albums-first {
+      width: 352px;
+      height: 422px;
+      background: #292929;
+      border-radius: 24px;
+
+      .featured-albums-section__albums-first-image-container {
+        width: 140px;
+        height: 140px;
+        background: #EAA3A3;
+        border-radius: 16px;
+      }
+
+      .featured-albums-section__albums-first-content {
+
+
+        .featured-albums-section__albums-first-content-title {
+          position: relative;
+          width: 199px;
+          height: 48px;
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 100%;
+          color: #FFFFFF;
+
+        }
+
+        .featured-albums-section__albums-first-content-info {
+          position: relative;
+          width: 304px;
+          height: 44px;
+
+
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          letter-spacing: -0.01em;
+          color: #FFFFFF;
+          opacity: 0.5;
+        }
+
+        .featured-albums-section__albums-first-content-button {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 16px 24px;
+          gap: 8px;
+
+          position: relative;
+          width: 165px;
+          height: 48px;
+          background: #65D46E;
+          border-radius: 200px;
+
+
+        }
+      }
+
+      .featured-albums-section__albums-second {
+        width: 352px;
+        height: 422px;
+        background: #292929;
+        border-radius: 24px;
+
+        .featured-albums-section__albums-second-image-container {
+          width: 140px;
+          height: 140px;
+          background: #EAA3A3;
+          border-radius: 16px;
+        }
+      }
+
+      .featured-albums-section__albums-third {
+        width: 352px;
+        height: 422px;
+        background: #292929;
+        border-radius: 24px;
+
+        .featured-albums-section__albums-third-image-container {
+          width: 140px;
+          height: 140px;
+          background: #EAA3A3;
+          border-radius: 16px;
+        }
+      }
+    }
+
+    .featured-albums-section-spotify-ad {
+      box-sizing: border-box;
+
+      position: absolute;
+      width: 1136px;
+      height: 176px;
+
+
+      border: 1px solid #343434;
+      border-radius: 32px;
+
+      .featured-albums-section-spotify-ad-container {
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 1088px;
+        height: 128px;
+
+
+        background: linear-gradient(90.79deg, #65D46E -8.89%, #0B280D 100%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 24px;
+      }
+    }
+  }
+}
